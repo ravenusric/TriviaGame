@@ -1,0 +1,69 @@
+html, body{
+    height:100%;
+  }
+  
+  body{
+    background-image: url(../images/horror.jpg);
+    text-align: center;
+  
+  }
+  
+  #wrapper{
+    margin:2.5% auto;
+    background-color:rgba(0, 128, 0, 0.315);
+    width:960px;
+    height: 95%;
+    box-sizing: border-box;
+  }
+  
+  #subwrapper{
+    position: relative;
+  }
+  button{
+    display:block;
+    width:50%;
+    height:20%;
+    margin: 0 auto;
+    border:none;
+    cursor: pointer;
+    background:transparent;
+    font-family: 'Creepster', cursive;
+    text-shadow:black;text-shadow: 2px 4px red;
+    font-size: 42px;;
+  }
+  
+  img{
+    height:200px;
+  }
+  
+  h1{
+    font-family: 'Creepster', cursive;
+    font-size: 80px;
+    color:black;text-shadow: 4px 9px red;
+    padding-top: 2.5%;
+  }
+  
+  h2{
+    font-size: 35px;
+    font-family: 'Creepster', cursive;
+    color:greenyellow;text-shadow: 2px 6px black;
+    margin-bottom: 25px;
+  }
+  
+  h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  
+  #start{
+    margin-top: 10%;
+    border:2px solid blue;
+    background: greenyellow;
+  }
+  
+  
+  
+  button:hover {
+    border:2px solid blue;
+    background: greenyellow;
+  }
