@@ -1,5 +1,5 @@
 var panel = $('#quiz-area');
-var countStartNumber = 30;
+var beginCount = 30;
 var movie = "Friday the 13th";
     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&y=&plot=short&apikey=trilogy";
 
@@ -175,7 +175,7 @@ var questions = [{
 var game = {
   questions:questions,
   currentQuestion:0,
-  counter:countStartNumber,
+  counter:beginCount,
   correct:0,
   incorrect:0,
   countdown: function(){
@@ -195,7 +195,7 @@ var game = {
     }
   },
   nextQuestion: function(){
-    game.counter = countStartNumber;
+    game.counter = beginCount;
     $('#counter-number').html(game.counter);
     game.currentQuestion++;
     game.loadQuestion();
@@ -236,7 +236,7 @@ var game = {
   answeredIncorrectly: function() {
     game.incorrect++;
     clearInterval(timer);
-    panel.html('<h2>Wrong! Nervous?</h2>');
+    panel.html('<h2>Wrong! Scared ?</h2>');
     panel.append('<h3>The Correct Answer was: ' + questions[game.currentQuestion].correctAnswer + '</h3>');
     panel.append('<img src="' + questions[game.currentQuestion].image + '" />');
 
@@ -260,7 +260,7 @@ var game = {
   },
  reset: function(){
     this.currentQuestion = 0;
-    this.counter = countStartNumber;
+    this.counter = beginCount;
     this.correct = 0;
     this.incorrect = 0;
     this.loadQuestion();
